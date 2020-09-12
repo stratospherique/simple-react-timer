@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Timer.scss';
 
-export default () => {
+export default ({color}) => {
   const [secondsState, setSecondsState] = useState(new Date().getSeconds())
   const [minutesState, setMintuesState] = useState(new Date().getMinutes());
   const [hoursState, setHoursState] = useState(new Date().getHours());
@@ -25,11 +25,11 @@ export default () => {
 
   return (
     <>
-      <span className="stick hours">{("0" + hoursState).slice(-2)}</span>
+      <span className="stick hours" style={{color: color}}>{("0" + hoursState).slice(-2)}</span>
       <span className="stick">:</span>
-      <span className="stick minutes">{("0" + minutesState).slice(-2)}</span>
+      <span className="stick minutes" style={{color: color}}>{("0" + minutesState).slice(-2)}</span>
       <span className="stick">:</span>
-      <span className="stick seconds">{("0" + secondsState).slice(-2)}</span>
+      <span className="stick seconds" style={{color: color}}>{("0" + secondsState).slice(-2)}</span>
     </>
   )
 }

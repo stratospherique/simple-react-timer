@@ -4,7 +4,7 @@ import '../assets/css/index.scss';
 
 const App = () => (
   <div>
-    <Timer />
+    <Timer color="green"/>
   </div>
 )
 
