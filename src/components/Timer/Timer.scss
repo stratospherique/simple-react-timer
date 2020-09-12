@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Mobile';
+  src: local('Mobile'), url('./fonts/digital-7.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+.stick {
+  font-family: Mobile, sans-serif;
+  font-size: 3em;
+}
+
